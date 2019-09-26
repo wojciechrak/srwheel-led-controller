@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+      <Authors>Wojciech Rak</Authors>
+      <PackageId>SRWheel.LedController</PackageId>
+      <PackageProjectUrl>https://github.com/wojciechrak/srwheel-led-controller</PackageProjectUrl>
+      <PackageVersion>0.1.0</PackageVersion>
+      <PackageTags>steelseries; srwheel; srw-s1; led; hid</PackageTags>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="hidlibrary" Version="3.2.46" />
+  </ItemGroup>
+
+</Project>
