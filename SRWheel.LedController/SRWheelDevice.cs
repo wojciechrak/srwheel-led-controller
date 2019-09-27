@@ -1,6 +1,5 @@
 using System;
-using System.Linq;
-using HidLibrary;
+using HidSharp;
 
 namespace SRWheel.LedController
 {
@@ -16,9 +15,7 @@ namespace SRWheel.LedController
         
         public SRWheelDevice()
         {
-            _device = HidDevices
-                .Enumerate()
-                .FirstOrDefault(x => x.Attributes.ProductId == SRWHEEL_PID && x.Attributes.VendorId == SRWHEEL_VID);
+            _device = DeviceList.Local.GetHidDeviceOrNull(SRWHEEL_VID, SRWHEEL_PID);
         }
 
         public bool IsInitialized => _device != null;
@@ -27,8 +24,13 @@ namespace SRWheel.LedController
         {
             if(!IsInitialized)
                 throw new InvalidOperationException("SRWheel not found!");
-            
-            return _device.Write(data);
+
+            using (var s = _device.Open())
+            {
+                s.Write(data);
+            }
+
+            return true;
         }
     }
 }
