@@ -26,3 +26,6 @@ ctr.SetSection(LedSection.Red);
 ctr.Reset();
 
 ```
+
+# Demo
+See a short gif with demo application https://imgur.com/a/UgOV1rJ
