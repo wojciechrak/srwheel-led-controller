@@ -22,6 +22,7 @@ namespace SRWheel.LedController
             Array.Copy(_commonPayload, payload, 4);
             
             payload[2] = ledBytes[0];
+            // test
             payload[3] = ledBytes[1];
             
             return payload;
