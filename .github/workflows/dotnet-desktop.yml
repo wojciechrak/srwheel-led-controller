@@ -30,7 +30,7 @@ jobs:
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
-      run: dotnet restore -c Release
+      run: dotnet restore
         
     - name: Build app
       run: dotnet build -c Release
