@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRWheel.TestConsole", "SRWheel.TestConsole\SRWheel.TestConsole.csproj", "{405682F9-E71F-4E86-A43F-97BE7A664382}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRWheel.LedController", "SRWheel.LedController\SRWheel.LedController.csproj", "{9D14259E-8DCB-4EA5-A7D8-E3005BC79284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRWheel.UniTests", "SRWheel.UniTests\SRWheel.UniTests.csproj", "{3AE347B0-D13A-48D2-8CE2-D194253A2CF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +21,9 @@ Global
 		{9D14259E-8DCB-4EA5-A7D8-E3005BC79284}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D14259E-8DCB-4EA5-A7D8-E3005BC79284}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D14259E-8DCB-4EA5-A7D8-E3005BC79284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE347B0-D13A-48D2-8CE2-D194253A2CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE347B0-D13A-48D2-8CE2-D194253A2CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE347B0-D13A-48D2-8CE2-D194253A2CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE347B0-D13A-48D2-8CE2-D194253A2CF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
